@@ -53,19 +53,19 @@ const questions = [
         type: "input",
         name: "firstname",
         message: "First name?",
-        default: "Lee"
+        default: "Your first name"
     },
     {
         type: "input",
         name: "middlename",
         message: "Middle name?",
-        default: "Charles"
+        default: "Your middle name"
     },
     {
         type: "input",
         name: "lastname",
         message: "Last name?",
-        default: "Laing"
+        default: "Your last name"
     },
     {
         type: "input",
@@ -83,25 +83,25 @@ const questions = [
         type: "input",
         name: "github",
         message: "Check out my Github @ ?",
-        default: "lcharleslaing"
+        default: "your github username"
     },
     {
         type: "input",
         name: "patreon",
         message: "Patreon username?",
-        default: "Lee Charles Laing"
+        default: "your patreon username"
     },
     {
         type: "input",
         name: "twitter",
         message: "Twitter username?",
-        default: "IAmLeeCharles"
+        default: "twitter username"
     },
     {
         type: "input",
         name: "linkedin",
         message: "LinkedIn username?",
-        default: "lee-charles-laing"
+        default: "linkedin username"
     },
     {
         type: "list",

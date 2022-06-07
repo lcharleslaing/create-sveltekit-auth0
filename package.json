@@ -7,6 +7,9 @@
     "inquirer": "^8.2.4",
     "prepend-file": "^2.0.1"
   },
+  "bin": {
+    "create-sveltekit-auth0": "app.js"
+  },
   "scripts": {
     "start": "node app.js"
   },

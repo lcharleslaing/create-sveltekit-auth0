@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const inquirer = require("inquirer")
 const MarkDown = require("./lib/ReadmeGen")
 const Env = require("./lib/EnvGen")

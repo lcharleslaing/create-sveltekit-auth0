@@ -1,9 +1,10 @@
 {
   "name": "create-sveltekit-auth0",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A CLI tool to add Auth0 to you Sveltekit Project",
   "main": "app.js",
   "dependencies": {
+    "@auth0/auth0-spa-js": "^1.22.0",
     "inquirer": "^8.2.4",
     "prepend-file": "^2.0.1"
   },

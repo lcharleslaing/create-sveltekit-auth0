@@ -5,7 +5,6 @@
   "main": "app.js",
   "dependencies": {
     "inquirer": "^8.2.4",
-    "mkdirp": "^1.0.4",
     "prepend-file": "^2.0.1"
   },
   "scripts": {
@@ -13,8 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "sample"
+    "url": "https://github.com/lcharleslaing/create-sveltekit-auth0",
   },
+  "email": "iambig2tiny#issues@telios.io",
   "keywords": [
     "sveltekit",
     "svelte",
@@ -25,5 +25,10 @@
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.16"
+  },
+  "homepage": "https://github.com/lcharleslaing/create-sveltekit-auth0",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/iambig2tiny?fan_landing=true"
   }
 }

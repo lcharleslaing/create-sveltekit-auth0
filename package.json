@@ -12,9 +12,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lcharleslaing/create-sveltekit-auth0",
+    "url": "https://github.com/lcharleslaing/create-sveltekit-auth0"
   },
-  "email": "iambig2tiny#issues@telios.io",
   "keywords": [
     "sveltekit",
     "svelte",
@@ -26,9 +25,9 @@
   "devDependencies": {
     "nodemon": "^2.0.16"
   },
-  "homepage": "https://github.com/lcharleslaing/create-sveltekit-auth0",
   "funding": {
     "type": "patreon",
     "url": "https://www.patreon.com/iambig2tiny?fan_landing=true"
-  }
+  },
+  "homepage": "https://github.com/lcharleslaing/create-sveltekit-auth0"
 }

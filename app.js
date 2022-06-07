@@ -6,6 +6,7 @@ const Service = require("./lib/AuthServiceGen")
 const Store = require("./lib/AuthStoreGen")
 const Component = require("./lib/ComponentAuthGen")
 const Layout = require("./lib/LayoutFileGen")
+const Navbar = require("./lib/NavbarGen")
 const fs = require("fs")
 const path = require('path');
 const prependFile = require('prepend-file');
@@ -152,6 +153,7 @@ async function runQuery() {
             const auth0Storefile = Store.generateStore()
             const layoutfile = Layout.generate()
             const componentfile = Component.generate()
+            const navbarfile = Navbar.generate()
 
             const auth0ServiceFileDir = `./src/lib/auth`
             const auth0ConfigFileDir = `./src/lib/auth`
@@ -166,11 +168,12 @@ async function runQuery() {
             makeDir(routesDir)
 
             createFile("NEW-README.md", markdown)
-            createFile("new-generated.env", envfile)
+            createFile("AUTH0.env", envfile)
             createFile(`${auth0ConfigFileDir}/auth0_config.js`, auth0Configfile)
             createFile(`${auth0ServiceFileDir}/auth0_service.js`, auth0Servicefile)
             createFile(`${auth0StoreFileDir}/authStore.js`, auth0Storefile)
             createFile(`${componentsDir}/SveltekitAuth0.svelte`, componentfile)
+            createFile(`${componentsDir}/NavbarAuth0.svelte`, navbarfile)
             createFile(`${routesDir}/__layout.svelte`, layoutfile)
         })
         .catch((error) => { console.log("error: ", error); })

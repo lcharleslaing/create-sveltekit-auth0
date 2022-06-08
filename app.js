@@ -1,6 +1,10 @@
 #!/usr/bin/env node
-
+const { exec } = require("child_process")
+const fs = require("fs")
 const inquirer = require("inquirer")
+const prependFile = require('prepend-file');
+const path = require('path');
+
 const MarkDown = require("./lib/ReadmeGen")
 const Env = require("./lib/EnvGen")
 const Config = require("./lib/AuthConfigGen")
@@ -9,9 +13,6 @@ const Store = require("./lib/AuthStoreGen")
 const Component = require("./lib/ComponentAuthGen")
 const Layout = require("./lib/LayoutFileGen")
 const Navbar = require("./lib/NavbarGen")
-const fs = require("fs")
-const path = require('path');
-const prependFile = require('prepend-file');
 
 // App Questions
 const questions = [
@@ -148,6 +149,8 @@ const createFile = (file, data) => {
 async function runQuery() {
     return inquirer.prompt(questions)
         .then((answers) => {
+            exec("npm i")
+            exec("npm i @auth0/auth0-spa-js")
             const markdown = MarkDown.generateReadme(answers)
             const envfile = Env.generateEnv()
             const auth0Configfile = Config.generateConfig()
